@@ -17,12 +17,6 @@
         (exit 0))
       (match (car  rest)
         ;; actions
-        ("install"
-         (install (cadr rest)))
-        ((or "uninstall" "rm")
-         (uninstall (cadr rest)))
-        ("setup"
-         (setup (cadr rest)))
-        ("command"
-         (print-commands))
+        ("list"
+         (list-settings (cadr rest)))
         (_ (exit 0))))))

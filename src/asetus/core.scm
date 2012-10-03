@@ -1,3 +1,3 @@
 (define-module asetus.core
   )
-(select-module asetus)
+(select-module asetus.core)
