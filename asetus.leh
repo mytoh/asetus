@@ -1,0 +1,12 @@
+
+
+(install
+  (
+    (run-process `(gauche-install -T ,(build-path *lehti-dist-directory* "asetus")
+                                  "bin/asetus")
+                 :wait #t)
+   ;; library sources
+   (copy-directory* (build-path *lehti-cache-directory* "asetus/src")
+                    (build-path *lehti-dist-directory* "asetus/src"))
+)
+)
