@@ -8,7 +8,7 @@
   (use srfi-13)
   (use srfi-1)
 
-  (use kirjasto.väri)
+  (use maali)
   )
 (select-module asetus.commands.list)
 
@@ -30,8 +30,8 @@
     (lambda (e)
       (if (not (null? e))
         (format #t "~a: ~a\n"
-                (colour-string 39 (car e))  
-                (colour-string 169 (cadr e)))))
+                (paint (car e) 39 )
+                (paint (cadr e) 169 ))))
     lyst))
 
 (define (remove-comment string)
