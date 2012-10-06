@@ -30,16 +30,15 @@
     (lambda (e)
       (if (not (null? e))
         (format #t "~a: ~a\n"
-                (paint (car e) 39 )
-                (paint (cadr e) 169 ))))
+                (paint (car e) 39)
+                (paint (cadr e) 169))))
     lyst))
 
-(define (remove-comment string)
+(define (remove-comment st)
   (if-let1 removed-string
-    (string-scan string #\# 'before)
+    (string-scan st #\# 'before)
     (string-trim-both removed-string)
-    string
-    ))
+    st))
 
 
 (define (remove-if-statement lis)
@@ -70,5 +69,4 @@
 
 (define (list-settings setting-file)
   (print-for-each
-    (file->settings setting-file))
-  )
+    (file->settings setting-file)))
