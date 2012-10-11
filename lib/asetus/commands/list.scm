@@ -30,8 +30,8 @@
     (lambda (e)
       (if (not (null? e))
         (format #t "~a: ~a\n"
-                (paint (car e) 39)
-                (paint (cadr e) 169))))
+                (paint (car e) 31)
+                (paint (cadr e) 172))))
     lyst))
 
 (define (remove-comment st)
