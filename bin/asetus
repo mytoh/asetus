@@ -1,4 +1,4 @@
-#!/usr/bin/env gosh
+":"; exec gosh -- $0 "$@"
 
 (add-load-path "../src" :relative)
 (use asetus.cli :prefix cli:)
