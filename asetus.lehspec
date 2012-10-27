@@ -1,11 +1,9 @@
 (spec
+  '(name "asetus")
  '(files ("lib/**/*.scm"
         "bin/*"
         "*.lehspec"
         "readme*"
-        "test/**/*.scm"))
+        "test/**/*.scm")))
 
-
-  '(dependencies
-    ("makiki")))
 
