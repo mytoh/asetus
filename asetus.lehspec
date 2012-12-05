@@ -1,9 +1,11 @@
+
 (spec
-  '(name "asetus")
- '(files ("lib/**/*.scm"
-        "bin/*"
-        "*.lehspec"
-        "readme*"
-        "test/**/*.scm")))
-
-
+  (name "asetus")
+  (description "list settings")
+  (homepage "http://github.com/mytoh/asetus")
+  (files ("bin/asetus"
+          "lib/asetus/cli.sls"
+          "lib/asetus/commands.sls"
+          "lib/asetus/commands/list.sls"
+          "asetus.lehspec"
+          )))

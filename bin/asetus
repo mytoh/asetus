@@ -1,9 +1,14 @@
-":"; exec gosh -- $0 "$@"
+#!/usr/bin/env mosh
 
-(add-load-path "../src" :relative)
-(use asetus.cli :prefix cli:)
+(import
+  (rnrs)
+  (prefix (asetus cli)
+          cli.))
 
 (define (main args)
-  (cli:runner args))
+  (cli.runner args)
+  )
 
-;; vim:filetype=scheme
+(main (command-line))
+
+;; vim: filetype=scheme
