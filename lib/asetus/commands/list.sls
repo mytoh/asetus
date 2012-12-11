@@ -40,7 +40,7 @@
                     (paint (string-trim-both (cadr e)) 172))))
         lyst))
 
-    (define (remove-comment st)
+    (define (remove-inline-comment st)
       (if (string-index st #\#)
         (string-trim-both (string-take st (string-index st #\#)))
         st))
@@ -65,7 +65,7 @@
       (map
         (lambda (setting-and-value)
           (map
-            (lambda (e) (string-trim-both (remove-comment e) #\"))
+            (lambda (e) (string-trim-both  e #\"))
             (string-split setting-and-value #\=)))
         (remove-if-statement
           (remove
