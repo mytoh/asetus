@@ -1,7 +1,8 @@
 #!/usr/bin/env mosh
 
 (import
-  (rnrs)
+  (silta base)
+  (silta process-context)
   (prefix (asetus cli)
           cli.))
 
