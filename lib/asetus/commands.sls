@@ -3,7 +3,7 @@
   (export
     list-settings)
   (import
-    (rnrs)
+    (silta base)
     (asetus commands list))
 
   )

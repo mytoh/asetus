@@ -3,8 +3,7 @@
   (export
     list-settings)
   (import
-    (except (rnrs)
-            remove)
+    (silta base)
     (only (srfi :1)
           remove)
     (only (srfi :13)
