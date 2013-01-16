@@ -4,6 +4,7 @@
     list-settings)
   (import
     (silta base)
+    (silta cxr)
     (only (srfi :1)
           remove)
     (only (srfi :13)
